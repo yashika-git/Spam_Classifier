@@ -5,12 +5,17 @@
 
 
 
+
 import streamlit as st
 import pickle
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-import nltk
 import string
+from nltk.tokenize import word_tokenize
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 lemmatizer = WordNetLemmatizer()
 
